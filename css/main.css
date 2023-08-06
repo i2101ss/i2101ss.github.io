@@ -549,6 +549,7 @@ textarea.input100 {
   width: 100%;
   background-color: #f0f0f0;
   padding: 20px;
+  text-align: center;
 }
 
 #floating-bottom-div {
@@ -558,4 +559,5 @@ textarea.input100 {
   width: 100%;
   background-color: #f0f0f0;
   padding: 20px;
+  text-align: center;
 }
