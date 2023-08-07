@@ -220,7 +220,7 @@ iframe {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 0px; /* 15px */
   background: #f2f2f2;
 }
 
@@ -399,7 +399,8 @@ textarea.input100 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 23px;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .contact100-form-btn {
@@ -548,7 +549,7 @@ textarea.input100 {
   left: 0;
   width: 100%;
   background-color: #f0f0f0; /* Set a non-transparent background color */
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   z-index: 2;
 }
@@ -560,7 +561,7 @@ textarea.input100 {
   left: 0;
   width: 100%;
   background-color: #f0f0f0; /* Set a non-transparent background color */
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   z-index: 2;
 }
