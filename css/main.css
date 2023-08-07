@@ -541,23 +541,25 @@ textarea.input100 {
 }
 
 /* 20230807 */
-/* Style your content div as you need */
+/* Style your top floating div as you need */
 #floating-top-div {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: #f0f0f0; /* Set a non-transparent background color */
   padding: 20px;
   text-align: center;
+  z-index: 2;
 }
 
+/* Style your bottom floating div as you need */
 #floating-bottom-div {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: #f0f0f0; /* Set a non-transparent background color */
   padding: 20px;
   text-align: center;
 }
