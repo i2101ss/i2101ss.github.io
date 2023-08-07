@@ -295,6 +295,10 @@ iframe {
   width: 100%;
   position: relative;
   border: 1px solid #e6e6e6;
+  
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
 }
 
 .rs1-wrap-input100,
@@ -568,4 +572,24 @@ textarea.input100 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.plus-btn {
+  width: 50%; /* Set width to 50% */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  display: inline-block; /* Display buttons side by side */
+  padding: 10px;
+  background-color: #00cc00; /* Golden yellow color */
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.minus-btn {
+  width: 50%; /* Set width to 50% */
+  box-sizing: border-box; /* Include padding and border in the width calculation */
+  display: inline-block; /* Display buttons side by side */
+  padding: 10px;
+  background-color: #cc0000; /* Golden yellow color */
+  font-size: 16px;
+  border-radius: 5px;
 }
