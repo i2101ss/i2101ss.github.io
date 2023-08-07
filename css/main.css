@@ -88,8 +88,12 @@ li {
 
 /*---------------------------------------------*/
 input {
-  outline: none;
-  border: none;
+  /* outline: none; */
+  /* border: none; */
+}
+
+input[type="text"] {
+  text-align: center;
 }
 
 textarea {
@@ -450,7 +454,7 @@ textarea.input100 {
   min-width: 100px;
   height: 50px;
   border-radius: 20px;
-  background: #4169E1;
+  background: #4169e1;
 
   font-family: Montserrat-Bold;
   font-size: 22px;
@@ -610,7 +614,7 @@ textarea.input100 {
 }
 
 .plus-btn {
-  width: 50%; /* Set width to 50% */
+  width: 10%; /* Set width to 50% */
   box-sizing: border-box; /* Include padding and border in the width calculation */
   display: inline-block; /* Display buttons side by side */
   padding: 10px;
@@ -620,7 +624,7 @@ textarea.input100 {
 }
 
 .minus-btn {
-  width: 50%; /* Set width to 50% */
+  width: 10%; /* Set width to 50% */
   box-sizing: border-box; /* Include padding and border in the width calculation */
   display: inline-block; /* Display buttons side by side */
   padding: 10px;
