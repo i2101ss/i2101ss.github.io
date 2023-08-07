@@ -32,12 +32,14 @@
     <div id="floating-top-div">
       <!-- <h2>金滿意手工肉羹</h2> -->
       <!-- <span class="contact100-form-title">金滿意手工肉羹</span> -->
-      This is a floating div at the bottom.
+      <!-- This is a floating div at the bottom. -->
+      金滿意手工肉羹
     </div>
 
     <div class="container-contact100">
       <div class="wrap-contact100">
         <form id="google-form" class="contact100-form validate-form">
+          
           <label class="label-input100" for="first-name">肉羹湯60元</label>
           <div class="wrap-input100 validate-input" data-validate="肉羹湯60元為必填" >
             <!-- <input id="name" class="input100" type="number" placeholder="肉羹湯60元" /> -->
@@ -173,7 +175,8 @@
           -->
 
           <div id="floating-bottom-div">
-            <button class="contact100-form-btn">送出</button>
+            <button type="button" id="send-btn" class="contact100-form-send-btn">送出</button>
+            <button type="button" id="reset-btn" class="contact100-form-reset-btn">重填</button>
           </div>
         </form>
         <!-- 
@@ -250,14 +253,8 @@
     <!--===============================================================================================-->
     <script src="js/main.js"></script>
     <script>
-      $("#google-form").submit(function (e) {
-        //在這裡我們要先擋掉form默認事件
-        e.preventDefault();
-
-        if ($("#name").val() && $("#score").val()) {
-          //需要先確認必填欄位是否填寫
-        }
-
+      // 送出ajax
+      $("#send-btn").click(function() {
         $.ajax({
           // url為Google Form按下submit的aciotn
           url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdLeojG_kEbRK43u2REu8i_WbDz5JyU0Pyw3IGBUIbB5tb3zQ/formResponse",
@@ -300,8 +297,11 @@
             location.reload();
           },
         });
+      });
 
-        // 20230807 "必須"停用所有作答者的自動儲存功能 TonyWang
+      // 重新整理
+      $("#reset-btn").click(function() {
+        location.reload();
       });
     </script>
   </body>
