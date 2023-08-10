@@ -6,23 +6,23 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!--===============================================================================================-->
-  <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+  <!-- <link rel="icon" type="image/png" href="images/icons/favicon.ico" /> -->
   <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css" /> -->
   <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" /> -->
   <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css" /> -->
   <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css" /> -->
   <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css" /> -->
   <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css" /> -->
   <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css" /> -->
   <!--===============================================================================================-->
-  <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css" />
+  <!-- <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css" /> -->
   <!--===============================================================================================-->
   <link rel="stylesheet" type="text/css" href="css/util.css" />
   <link rel="stylesheet" type="text/css" href="css/main.css" />
@@ -50,18 +50,13 @@
         </div> -->
         <!-- end -->
 
-
-
-
         <!-- <div class="container-contact100-form-btn"></div> -->
         <div id="floating-bottom-div">
+          <label type="button"  id="total-label" class="contact100-form-total-label">0元</label>
           <button type="button" id="send-btn" class="contact100-form-send-btn">送出</button>
           <button type="button" id="reset-btn" class="contact100-form-reset-btn">重填</button>
         </div>
-
-
       </form>
-
 
       <div class="contact100-more flex-col-c-m" style="background-image: url('images/bg-01.jpg')">
         <div class="flex-w size1 p-b-47">
@@ -110,10 +105,10 @@
   <!-- <script src="vendor/jquery/jquery-3.2.1.min.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <!--===============================================================================================-->
-  <script src="vendor/animsition/js/animsition.min.js"></script>
+  <!-- <script src="vendor/animsition/js/animsition.min.js"></script> -->
   <!--===============================================================================================-->
-  <script src="vendor/bootstrap/js/popper.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!-- <script src="vendor/bootstrap/js/popper.js"></script> -->
+  <!-- <script src="vendor/bootstrap/js/bootstrap.min.js"></script> -->
   <!--===============================================================================================-->
   <!-- <script src="vendor/select2/select2.min.js"></script> -->
   <script>
@@ -125,12 +120,12 @@
     */
   </script>
   <!--===============================================================================================-->
-  <script src="vendor/daterangepicker/moment.min.js"></script>
-  <script src="vendor/daterangepicker/daterangepicker.js"></script>
+  <!-- <script src="vendor/daterangepicker/moment.min.js"></script> -->
+  <!-- <script src="vendor/daterangepicker/daterangepicker.js"></script> -->
   <!--===============================================================================================-->
-  <script src="vendor/countdowntime/countdowntime.js"></script>
+  <!-- <script src="vendor/countdowntime/countdowntime.js"></script> -->
   <!--===============================================================================================-->
-  <script src="js/main.js"></script>
+  <!-- <script src="js/main.js"></script> -->
   <script>
     // 送出ajax
     $("#send-btn").click(function () {
@@ -180,16 +175,19 @@
     });
 
     // 重新整理
-    $("#reset-btn").click(function () {
+    // $("#reset-btn").click(function () {
+    $(document).on("click", "#reset-btn", function () {
       location.reload();
       window.scrollTo(0, 0);
     });
 
-    $(".minus-btn").click(function () {
+    // $(".minus-btn").click(function () {
+    $(document).on("click", ".minus-btn", function () {
       alert("-1");
     });
 
-    $(".plus-btn").click(function () {
+    // $(".plus-btn").click(function () {
+    $(document).on("click", ".plus-btn", function () {
       alert("+1");
     });
 
@@ -198,20 +196,13 @@
       dataType: 'json',
       crossDomain: true, //解決跨網域CORS的問題
       success: function (data) {
-        // console.log(data); 
         // 在這裡處理 JSON 數據
         $.each(data, (i, row) => {
-          console.log(row);
-
           columnId = row.columnId;
           foodName = row.foodName;
           foodPrice = row.foodPrice;
 
-
-
-
           html = '';
-          // html = '<!-- start -->';
           html += '<div class="wrap-input100 validate-input">';
           html += '  <label class="label-input100" for="first-name">' + foodName + ' ' + foodPrice + '元</label>';
           html += '  <div>';
@@ -220,12 +211,8 @@
           html += '    <button type="button" class="plus-btn">+</button>';
           html += '  </div>';
           html += '</div>';
-          // html = '<!-- end -->';
-
-          console.log(html);
 
           $("#google-form").append(html);
-
         });
       },
       error: function (xhr, status, error) {
