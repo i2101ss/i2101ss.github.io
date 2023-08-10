@@ -88,8 +88,9 @@ li {
 
 /*---------------------------------------------*/
 input {
-  /* outline: none; */
-  /* border: none; */
+  outline: none;
+  border: none;
+  font-size: 20px;
 }
 
 input[type="text"] {
@@ -300,9 +301,10 @@ iframe {
   position: relative;
   border: 1px solid #e6e6e6;
 
-  /* display: flex;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: center; */
+  justify-content: space-between;
+  align-items: center;
 }
 
 .rs1-wrap-input100,
@@ -318,21 +320,23 @@ iframe {
   font-family: Poppins-Regular;
   font-size: 18px;
   color: #555555;
-  line-height: 1.5;
+  line-height: 3;
   text-transform: uppercase;
   letter-spacing: 1px;
 
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  align-items: center;
-  width: 100%;
+  /* display: -webkit-box; */
+  /* display: -webkit-flex; */
+  /* display: -moz-box; */
+  /* display: -ms-flexbox; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* width: 100%; */
+
   /* min-height: 55px; */
-  border: 1px solid #e6e6e6;
-  border-bottom: none;
-  padding: 5px 25px;
+  /* border: 1px solid #e6e6e6; */
+  /* border-bottom: none; */
+  /* border-right: none; */
+  /* padding: 5px 25px; */
   /* margin-top: 10px; */
   /* margin-bottom: 0; */
 
@@ -614,21 +618,23 @@ textarea.input100 {
 }
 
 .plus-btn {
-  width: 10%; /* Set width to 50% */
+  width: 50px; /* Set width to 50% */
   box-sizing: border-box; /* Include padding and border in the width calculation */
   display: inline-block; /* Display buttons side by side */
   padding: 10px;
   background-color: #00cc00; /* Golden yellow color */
   font-size: 16px;
   border-radius: 5px;
+  color: #f0f0f0;
 }
 
 .minus-btn {
-  width: 10%; /* Set width to 50% */
+  width: 50px; /* Set width to 50% */
   box-sizing: border-box; /* Include padding and border in the width calculation */
   display: inline-block; /* Display buttons side by side */
   padding: 10px;
   background-color: #cc0000; /* Golden yellow color */
   font-size: 16px;
   border-radius: 5px;
+  color: #f0f0f0;
 }
