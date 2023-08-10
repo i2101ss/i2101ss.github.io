@@ -1,0 +1,82 @@
+{
+  "0": {
+    "columnId": "entry.1647674127",
+    "foodName": "肉羹湯",
+    "foodPrice": "60"
+  },
+  "1": {
+    "columnId": "entry.1671612273",
+    "foodName": "肉羹飯",
+    "foodPrice": "80"
+  },
+  "2": {
+    "columnId": "entry.1827970631",
+    "foodName": "肉羹(麵)",
+    "foodPrice": "80"
+  },
+  "3": {
+    "columnId": "entry.1060828520",
+    "foodName": "肉羹(米粉)",
+    "foodPrice": "80"
+  },
+  "4": {
+    "columnId": "entry.732142714",
+    "foodName": "肉羹(冬粉)",
+    "foodPrice": "80"
+  },
+  "5": {
+    "columnId": "entry.270137827",
+    "foodName": "餛飩湯",
+    "foodPrice": "40"
+  },
+  "6": {
+    "columnId": "entry.2018868815",
+    "foodName": "餛飩(麵)",
+    "foodPrice": "60"
+  },
+  "7": {
+    "columnId": "entry.24358889",
+    "foodName": "餛飩(冬粉)",
+    "foodPrice": "60"
+  },
+  "8": {
+    "columnId": "entry.956502091",
+    "foodName": "乾拌麵",
+    "foodPrice": "40"
+  },
+  "9": {
+    "columnId": "entry.1805371343",
+    "foodName": "肉燥飯",
+    "foodPrice": "40"
+  },
+  "10": {
+    "columnId": "entry.704112435",
+    "foodName": "炒米粉",
+    "foodPrice": "80"
+  },
+  "11": {
+    "columnId": "entry.1686756169",
+    "foodName": "炒麵",
+    "foodPrice": "80"
+  },
+  "12": {
+    "columnId": "entry.218678213",
+    "foodName": "炒飯",
+    "foodPrice": "80"
+  },
+  "13": {
+    "columnId": "entry.1388353282",
+    "foodName": "紫菜蛋花湯",
+    "foodPrice": "30"
+  },
+  "14": {
+    "columnId": "entry.558110804",
+    "foodName": "滷蛋",
+    "foodPrice": "15"
+  },
+  "15": {
+    "columnId": "entry.796900721",
+    "foodName": "油豆腐",
+    "foodPrice": "10"
+  }
+}
